@@ -4,73 +4,82 @@
 
 module.exports = {
     // Bot Owner Configuration
-    ownerNumber: ['91xxxxxxxxxxx','917023951514'], // Add your number without + or spaces (e.g., 919876543210)
-    ownerName: ['Knight Bot Mini', 'Professor'], // Owner names corresponding to ownerNumber array
+    ownerNumber: ['33753191305'], // ton numéro français sans + ni espaces
+    ownerName: ['DENIZ'],         // ton nom
     
     // Bot Configuration
-    botName: 'Knight Bot Mini',
-    prefix: '.',
+    botName: 'Cyber by Deniz',
+    prefix: '.v ',
     sessionName: 'session',
     sessionID: process.env.SESSION_ID || '',
-    newsletterJid: '120363161513685998@newsletter', // Newsletter JID for menu forwarding
-    updateZipUrl: 'https://github.com/mruniquehacker/KnightBot-Mini/archive/refs/heads/main.zip', // URL to latest code zip for .update command
+    newsletterJid: '', // tu peux mettre ton propre JID si tu veux
+    updateZipUrl: '',  // optionnel, peut rester vide si pas de mise à jour automatique
     
     // Sticker Configuration
-    packname: 'Knight Bot Mini',
+    packname: 'Cyber by Deniz',
     
     // Bot Behavior
-    selfMode: false, // Private mode - only owner can use commands
+    selfMode: false, 
     autoRead: false,
     autoTyping: false,
     autoBio: false,
     autoSticker: false,
     autoReact: false,
-    autoReactMode: 'bot', // set bot or all via cmd
+    autoReactMode: 'bot',
     autoDownload: false,
     
     // Group Settings Defaults
     defaultGroupSettings: {
       antilink: false,
-      antilinkAction: 'delete', // 'delete', 'kick', 'warn'
+      antilinkAction: 'delete',
       antitag: false,
       antitagAction: 'delete',
-      antiall: false, // Owner only - blocks all messages from non-admins
+      antiall: false,
       antiviewonce: false,
       antibot: false,
-      anticall: false, // Anti-call feature
-      antigroupmention: false, // Anti-group mention feature
-      antigroupmentionAction: 'delete', // 'delete', 'kick'
-      welcome: false,
-      welcomeMessage: '╭╼━≪•𝙽𝙴𝚆 𝙼𝙴𝙼𝙱𝙴𝚁•≫━╾╮\n┃𝚆𝙴𝙻𝙲𝙾𝙼𝙴: @user 👋\n┃Member count: #memberCount\n┃𝚃𝙸𝙼𝙴: time⏰\n╰━━━━━━━━━━━━━━━╯\n\n*@user* Welcome to *@group*! 🎉\n*Group 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝚃𝙸𝙾𝙽*\ngroupDesc\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ botName*',
-      goodbye: false,
-      goodbyeMessage: 'Goodbye @user 👋 We will never miss you!',
+      anticall: false,
+      antigroupmention: false,
+      antigroupmentionAction: 'delete',
+      welcome: true,
+      welcomeMessage: `╔════════════════╗
+║ 👋 WELCOME!     ║
+║   Cyber by     ║
+║     Deniz      ║
+╚════════════════╝
+
+Salam @user! Mabruk 3lik 👏
+Member Count: #memberCount
+Time: time⏰
+
+> Enjoy f group w t3alam mzyan!`,
+      goodbye: true,
+      goodbyeMessage: '👋 Bye @user! Ma nsawoukch!',
       antiSpam: false,
       antidelete: false,
       nsfw: false,
       detect: false,
       chatbot: false,
-      autosticker: false // Auto-convert images/videos to stickers
+      autosticker: false
     },
     
-    // API Keys (add your own)
+    // API Keys (optionnel)
     apiKeys: {
-      // Add API keys here if needed
       openai: '',
       deepai: '',
       remove_bg: ''
     },
     
-    // Message Configuration
+    // Message Configuration en Darija (propre et lisible)
     messages: {
-      wait: '⏳ Please wait...',
-      success: '✅ Success!',
-      error: '❌ Error occurred!',
-      ownerOnly: '👑 This command is only for bot owner!',
-      adminOnly: '🛡️ This command is only for group admins!',
-      groupOnly: '👥 This command can only be used in groups!',
-      privateOnly: '💬 This command can only be used in private chat!',
-      botAdminNeeded: '🤖 Bot needs to be admin to execute this command!',
-      invalidCommand: '❓ Invalid command! Type .menu for help'
+      wait: '⏳ Sbr shwiya...',
+      success: '✅ Mzyan!',
+      error: '❌ Kayn mochkil!',
+      ownerOnly: '👑 Hadi dyal owner bark!',
+      adminOnly: '🛡️ Hadi dyal admin bark!',
+      groupOnly: '👥 Ghi f groupe!',
+      privateOnly: '💬 F chat privé bark!',
+      botAdminNeeded: '🤖 Ana khasni nkon admin!',
+      invalidCommand: '❓ Commande ma kaynach! Ktib .v menu'
     },
     
     // Timezone
@@ -79,11 +88,10 @@ module.exports = {
     // Limits
     maxWarnings: 3,
     
-    // Social Links (optional)
+    // Social Links (optionnel)
     social: {
-      github: 'https://github.com/mruniquehacker',
-      instagram: 'https://instagram.com/yourusername',
-      youtube: 'http://youtube.com/@mr_unique_hacker'
+      github: '',
+      instagram: '',
+      youtube: ''
     }
-};
-  
+}
